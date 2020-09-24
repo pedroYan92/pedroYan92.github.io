@@ -1,0 +1,465 @@
+@font-face {
+  font-family: JetBrains;
+  src: url(/ARCOTEC-SITE/pedroYan92.github.io/font/ttf/JetBrainsMono-Bold.ttf),
+    url(/ARCOTEC-SITE/pedroYan92.github.io/font/ttf/JetBrainsMono-Medium.ttf),
+    url(/ARCOTEC-SITE/pedroYan92.github.io/font/ttf/JetBrainsMono-ExtraBold.ttf);
+}
+:root {
+  --text-shadow: #afafaf 0 1px 2px;
+  --box-shadow: #707070 0px 1px 5px;
+}
+
+html {
+  font-size: 10px;
+  font-family: JetBrains;
+  scroll-behavior: smooth;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    150deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(135, 135, 233, 0.64) 73%,
+    rgba(154, 0, 255, 0.4) 100%
+  );
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 85%;
+  height: 5rem;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+  position: fixed;
+  left: 7.5%;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 0 0 1rem 1rem;
+}
+.header__logo {
+  height: 3.5rem;
+}
+
+.block__logo {
+  height: 3.5rem;
+  display: flex;
+  /* margin-left: 8rem; */
+}
+.block__phone {
+  display: flex;
+  width: 180px;
+  background-color: #707070;
+  padding: 1.5rem 1rem 1.5rem 0;
+  border-radius: 0.5em;
+  align-items: center;
+  margin-top: 0.3rem;
+}
+.header__icon__phone {
+  height: 3rem;
+}
+.header__phone {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #fff;
+}
+.hamburguer {
+  font-size: 2rem;
+  display: none;
+  background-color: transparent;
+  border: 0;
+  color: #707070;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+.hamburguer:focus {
+  outline: none;
+}
+.menu__nav {
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  width: 28rem;
+  justify-content: space-between;
+  text-shadow: var(--text-shadow);
+}
+.navbarList {
+  list-style: none;
+  display: flex;
+}
+
+.menu__button {
+  color: #707070;
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+.menu__button:hover {
+  color: #c71010;
+}
+
+.hero__section {
+  height: auto;
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero__block__text {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-top: 10rem;
+  justify-content: center;
+  text-shadow: var(--text-shadow);
+}
+.hero__primary__text {
+  color: #252ac1;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.diff__e {
+  color: #fff;
+}
+.diff__com {
+  color: #c71010;
+}
+.hero__secundary__text {
+  color: #707070;
+}
+.hero__button__CTA {
+  text-decoration: none;
+  width: 12rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #c71010;
+  background-color: #fff;
+  border-radius: 2rem;
+  padding: 1.5rem;
+  margin-top: 8rem;
+  text-shadow: var(--text-shadow);
+  box-shadow: var(--box-shadow);
+}
+.hero__button__CTA:hover {
+  background-color: #c71010;
+  color: #fff;
+}
+.hero__block__img {
+  width: 50%;
+  margin: 12rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero__img {
+  width: 40rem;
+
+  border-radius: 2rem;
+}
+.services__section {
+  height: auto;
+  width: 85%;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+
+  border-radius: 0.8rem;
+}
+.services__card {
+  height: 35rem;
+  width: 25rem;
+  margin: 1rem;
+  box-shadow: var(--box-shadow);
+  border-radius: 1rem;
+}
+.card__img {
+  height: 16rem;
+  margin-left: 5rem;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+.card__name {
+  color: #fff;
+  text-align: center;
+  margin: 1.5rem 0;
+  font-size: 2.5rem;
+  text-shadow: var(--text-shadow);
+}
+.card__description {
+  color: #fff;
+  margin-left: 1rem;
+  font-weight: normal;
+  font-size: 1.1rem;
+  text-shadow: var(--text-shadow);
+}
+
+.range__section {
+  height: auto;
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  text-shadow: var(--text-shadow);
+  justify-content: space-between;
+  margin-top: 4rem;
+}
+.range__block__text {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-shadow: var(--text-shadow);
+}
+.range__primary__text {
+  color: #fff;
+  font-size: 3rem;
+  text-align: center;
+}
+.range__img {
+  height: 25rem;
+}
+.range__block__img {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.range__img__map {
+  height: 24rem;
+}
+.about__section {
+  height: auto;
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  box-shadow: var(--box-shadow);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+.about__block__img {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about__img {
+  height: 25rem;
+}
+.about__block__text {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-shadow: var(--text-shadow);
+}
+.about__title {
+  font-size: 3rem;
+  color: #fff;
+  margin: 1rem 0;
+}
+.about__content {
+  color: #fff;
+  font-size: 1.3rem;
+  line-height: 1.7;
+}
+.contact__section {
+  height: auto;
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+
+  margin-top: 4rem;
+}
+.contact__block__text {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  color: #fff;
+  font-size: 2rem;
+  text-shadow: var(--text-shadow);
+}
+.contact__whats__block {
+  display: flex;
+  height: 10rem;
+  width: 22rem;
+  align-items: center;
+  margin-top: 3rem;
+  font-size: 1.5rem;
+}
+.contact__img {
+  height: 2rem;
+  width: 2rem;
+}
+.contact__whatsapp {
+  color: #fff;
+  text-shadow: var(--text-shadow);
+  display: flex;
+  text-decoration-color: crimson;
+}
+.contact__block__form {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 40rem;
+  border: 2px solid #fff;
+  border-radius: 1.5rem;
+  font-size: 1.4rem;
+  padding: 3rem;
+  box-shadow: var(--box-shadow);
+}
+label {
+  margin-top: 1rem;
+}
+input {
+  border-radius: 0.3rem;
+  border: none;
+  height: 2.5rem;
+  outline: none;
+}
+input:focus {
+  border: 3px solid lightblue;
+}
+textarea {
+  border-radius: 0.3rem;
+  border: none;
+  resize: none;
+  outline: none;
+}
+textarea:focus {
+  border: 3px solid lightblue;
+}
+.form__btn {
+  background-color: #fff;
+  border: none;
+  margin: 1.5rem auto;
+  padding: 0.8rem;
+  width: 12rem;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  font-weight: bold;
+  color: #707070;
+}
+
+.footer__container {
+  height: 8rem;
+  width: 85%;
+  font-size: 0.8rem;
+  font-weight: normal;
+  margin: 0 auto;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+  border-top: 1px solid #fff;
+}
+.footer__block__address {
+  width: 130px;
+  margin: 0.5rem;
+}
+.footer__block__copyright {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+@media (max-width: 860px) {
+  .hero__section,
+  .services__section,
+  .range__section,
+  .about__section,
+  .contact__section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  .hero__section {
+    width: 100%;
+  }
+}
+@media (max-width: 730px) {
+  .menu__nav {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.9);
+    height: auto;
+    width: 100%;
+  }
+  .menu__nav.show {
+    display: flex;
+  }
+  .hamburguer {
+    display: block;
+  }
+  .hero__img {
+    width: 25rem;
+  }
+  .about__section {
+    margin-top: 2rem;
+  }
+  .about__img {
+    height: 20rem;
+  }
+  .about__title {
+    font-size: 1.5rem;
+  }
+  .about__block__text {
+    width: 85%;
+  }
+  .about__content {
+    font-size: 1.2rem;
+  }
+  .block__phone {
+    display: flex;
+    width: 160px;
+    background-color: #707070;
+    padding: 1.5rem 1rem 1.5rem 0;
+    border-radius: 0.5em;
+    align-items: center;
+    margin-top: 0.3rem;
+  }
+  .header__icon__phone {
+    height: 2.5rem;
+  }
+  .header__phone {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #fff;
+  }
+}
+/* 860px width is the brakepoint to hamburguer menu */
