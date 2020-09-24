@@ -1,8 +1,8 @@
 @font-face {
   font-family: JetBrains;
-  src: url(/ARCOTEC-SITE/pedroYan92.github.io/font/ttf/JetBrainsMono-Bold.ttf),
-    url(/ARCOTEC-SITE/pedroYan92.github.io/font/ttf/JetBrainsMono-Medium.ttf),
-    url(/ARCOTEC-SITE/pedroYan92.github.io/font/ttf/JetBrainsMono-ExtraBold.ttf);
+  src: url(/font/ttf/JetBrainsMono-Bold.ttf),
+    url(/font/ttf/JetBrainsMono-Medium.ttf),
+    url(/font/ttf/JetBrainsMono-ExtraBold.ttf);
 }
 :root {
   --text-shadow: #afafaf 0 1px 2px;
