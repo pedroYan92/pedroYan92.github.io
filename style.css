@@ -1,8 +1,8 @@
 @font-face {
   font-family: JetBrains;
-  src: url(/font/ttf/JetBrainsMono-Bold.ttf),
-    url(/font/ttf/JetBrainsMono-Medium.ttf),
-    url(/font/ttf/JetBrainsMono-ExtraBold.ttf);
+  src: url(font/ttf/JetBrainsMono-Bold.ttf),
+    url(font/ttf/JetBrainsMono-Medium.ttf),
+    url(font/ttf/JetBrainsMono-ExtraBold.ttf);
 }
 :root {
   --text-shadow: #afafaf 0 1px 2px;
@@ -19,7 +19,7 @@ html {
   margin: 0;
   box-sizing: border-box;
 }
-body {
+.wrapper {
   background: rgb(255, 255, 255);
   background: linear-gradient(
     150deg,
@@ -27,6 +27,7 @@ body {
     rgba(135, 135, 233, 0.64) 73%,
     rgba(154, 0, 255, 0.4) 100%
   );
+  background-attachment: fixed;
 }
 
 .header {
@@ -117,6 +118,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 50%;
+  text-align: center;
   margin-top: 10rem;
   justify-content: center;
   text-shadow: var(--text-shadow);
@@ -127,7 +129,7 @@ body {
   font-weight: bold;
 }
 .diff__e {
-  color: #fff;
+  color: #707070;
 }
 .diff__com {
   color: #c71010;
@@ -396,28 +398,41 @@ textarea:focus {
   justify-content: center;
   font-size: 1.2rem;
 }
+.linkDeveloper {
+  text-decoration: none;
+  color: #707070;
+}
 @media (max-width: 860px) {
   .hero__section,
   .services__section,
   .range__section,
   .about__section,
-  .contact__section {
+  .contact__section,
+  .footer__container {
     display: flex;
     flex-direction: column;
+    position: relative;
+    left: 15%;
+    margin: 0 auto;
     flex-wrap: nowrap;
     align-items: center;
-  }
-
-  .hero__section {
     width: 100%;
   }
+  .about__section {
+    width: 85%;
+    margin-top: 2rem;
+  }
+  .about__block__text {
+    width: 90%;
+  }
 }
+
 @media (max-width: 730px) {
   .menu__nav {
     display: none;
     flex-direction: column;
     background-color: rgba(255, 255, 255, 0.9);
-    height: auto;
+    height: 11rem;
     width: 100%;
   }
   .menu__nav.show {
@@ -426,23 +441,48 @@ textarea:focus {
   .hamburguer {
     display: block;
   }
+  .hero__section {
+    width: 100%;
+  }
+  .hero__block__text {
+    width: 100%;
+  }
+
   .hero__img {
     width: 25rem;
   }
+  .range__section {
+    margin-top: 2.5rem;
+  }
+  .range__img__map {
+    height: 20rem;
+  }
+  .card__description {
+    font-size: 1.5rem;
+    padding: 0.8rem;
+  }
+  .services__card {
+    height: auto;
+  }
   .about__section {
-    margin-top: 2rem;
+    margin-top: 3.5rem;
+    width: 85%;
   }
   .about__img {
     height: 20rem;
   }
   .about__title {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   .about__block__text {
-    width: 85%;
+    width: 95%;
   }
   .about__content {
-    font-size: 1.2rem;
+    font-size: 1.7rem;
+    width: 100%;
+  }
+  .contact__section {
+    margin-top: 3rem;
   }
   .block__phone {
     display: flex;
@@ -453,13 +493,39 @@ textarea:focus {
     align-items: center;
     margin-top: 0.3rem;
   }
+
   .header__icon__phone {
-    height: 2.5rem;
+    height: 2rem;
   }
   .header__phone {
     font-size: 1.4rem;
     font-weight: bold;
     color: #fff;
   }
+  .footer__container {
+    margin-top: 3rem;
+    font-size: 1.5rem;
+  }
+  .footer__block__address {
+    width: 100%;
+  }
+  .footer__block__copyright {
+    font-size: 1.5rem;
+    padding: 2rem;
+  }
 }
-/* 860px width is the brakepoint to hamburguer menu */
+@media (max-width: 314px) {
+  .header__logo {
+    margin-top: 0.8rem;
+    height: 2.2rem;
+  }
+  .header__phone {
+    font-size: 1.8rem;
+  }
+  .block__phone {
+    width: 180px;
+  }
+  .footer__block__copyright {
+    font-size: 1.3rem;
+  }
+}
