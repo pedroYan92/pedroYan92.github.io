@@ -307,10 +307,12 @@ html {
 .contact__whats__block {
   display: flex;
   height: 10rem;
-  width: 22rem;
   align-items: center;
   margin-top: 3rem;
   font-size: 1.5rem;
+  flex-direction: column;
+
+  width: 35rem;
 }
 .contact__img {
   height: 2rem;
@@ -320,6 +322,7 @@ html {
   color: #fff;
   text-shadow: var(--text-shadow);
   display: flex;
+
   text-decoration-color: crimson;
 }
 .contact__block__form {
@@ -449,7 +452,7 @@ textarea:focus {
   }
 
   .hero__img {
-    width: 25rem;
+    width: 28rem;
   }
   .range__section {
     margin-top: 2.5rem;
