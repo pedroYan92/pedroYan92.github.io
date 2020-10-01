@@ -172,15 +172,15 @@
         </div>
       </div>
       <div class="contact__block__form">
-        <form action="POST" name="contact-client" class="contact__form" data-netlify="true" >
+        <form method="POST" name="contact-client" class="contact__form" data-netlify="true" >
           <label for="" class="fullName">NOME COMPLETO</label>
-          <input type="text" class="contact__input-fullName" />
+          <input name="name" type="text" class="contact__input-fullName" />
           <label for="" class="email">EMAIL</label>
-          <input type="text" class="contact__input-email" />
+          <input name="email" type="text" class="contact__input-email" />
           <label for="" class="phone">TELEFONE</label>
-          <input type="number" class="contact__input-phone" />
+          <input name="number" type="number" class="contact__input-phone" />
           <label for="" class="form__textArea">DEIXE UMA MENSAGEM</label>
-          <textarea name="" class="form__input-textArea" cols="30" rows="10">
+          <textarea name="message" class="form__input-textArea" cols="30" rows="10">
           </textarea>
           <div class="field">
             <div data-netlify-recaptcha="true"></div>
