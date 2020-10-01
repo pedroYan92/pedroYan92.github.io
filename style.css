@@ -336,8 +336,8 @@ html {
 .contact__form {
   display: flex;
   flex-direction: column;
-  width: 300px;
-  height: 40rem;
+  width: 400px;
+  height: 43rem;
   border: 2px solid #fff;
   border-radius: 1.5rem;
   font-size: 1.4rem;
@@ -362,6 +362,7 @@ textarea {
   resize: none;
   outline: none;
   margin-bottom: 1.5rem;
+  padding: 4rem;
 }
 textarea:focus {
   border: 3px solid lightblue;
