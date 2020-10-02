@@ -341,7 +341,7 @@ html {
   display: flex;
   flex-direction: column;
   width: 400px;
-  height: 43rem;
+  height: auto;
   border: 2px solid #fff;
   border-radius: 1.5rem;
   font-size: 1.4rem;
