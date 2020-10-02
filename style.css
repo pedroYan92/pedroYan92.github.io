@@ -24,6 +24,7 @@ html {
   min-height: 100%;
   margin: 0;
   background-size: auto;
+  background-attachment: scroll;
   background: rgba(255, 255, 255, 0);
   background: linear-gradient(
     150deg,
@@ -31,7 +32,6 @@ html {
     rgba(135, 135, 233, 0.64) 73%,
     rgba(154, 0, 255, 0.4) 100%
   );
-  background-attachment: fixed;
 }
 
 .header {
@@ -385,13 +385,14 @@ textarea:focus {
 }
 
 .footer__container {
-  height: 8rem;
+  height: auto;
   width: 85%;
   font-size: 0.8rem;
   font-weight: normal;
   margin: 0 auto;
   color: #fff;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   margin-top: 4rem;
   border-top: 1px solid #fff;
@@ -415,6 +416,10 @@ textarea:focus {
   color: #707070;
 }
 @media (max-width: 860px) {
+  .wrapper {
+    background-size: 10%;
+    background-attachment: scroll;
+  }
   .hero__section,
   .services__section,
   .range__section,
@@ -430,6 +435,7 @@ textarea:focus {
     align-items: center;
     width: 100%;
   }
+
   .about__section {
     width: 85%;
     margin-top: 2rem;
@@ -440,6 +446,10 @@ textarea:focus {
 }
 
 @media (max-width: 730px) {
+  .wrapper {
+    background-size: 10%;
+    background-attachment: scroll;
+  }
   .menu__nav {
     display: none;
     flex-direction: column;
@@ -515,6 +525,7 @@ textarea:focus {
     color: #fff;
   }
   .footer__container {
+    height: auto;
     margin-top: 3rem;
     font-size: 1.5rem;
   }
@@ -522,8 +533,8 @@ textarea:focus {
     width: 100%;
   }
   .footer__block__copyright {
-    font-size: 1.5rem;
-    padding: 2rem;
+    font-size: 1.2rem;
+    margin: 2rem;
   }
 }
 @media (max-width: 314px) {
