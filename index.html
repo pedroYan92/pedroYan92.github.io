@@ -10,10 +10,12 @@
       integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="wrapper">
-    <header class="header">
+    <header class="header" data-aos="fade-up">
       <div class="block__logo">
         <a href="" class="logo">
           <img
@@ -41,7 +43,7 @@
       </nav>
     </header>
     <main class="hero__section">
-      <div class="hero__block__text">
+      <div class="hero__block__text" data-aos="fade-right">
         <h1 class="hero__primary__text">
           RESIDENCIAL 
           <br> 
@@ -54,7 +56,7 @@
         </h2>
         <a href="#contact__section" class="hero__button__CTA">LIGUE JÁ</a>
       </div>
-      <div class="hero__block__img">
+      <div class="hero__block__img" data-aos="fade-left">
         <img
           src="images/hero-arcotec.png"
           alt=""
@@ -63,7 +65,7 @@
       </div>
     </main>
     <section class="services__section" id="services__section">
-      <article class="services__card">
+      <article class="services__card" data-aos="zoom-in">
         <img
           src="images/icon-instalacao-arcotec.png"
           alt=""
@@ -80,7 +82,7 @@
           <p class="card__description">Tudo com garantia e segurança de Instalação de acordo com as normas. </p>
         </p>
       </article>
-      <article class="services__card">
+      <article class="services__card" data-aos="zoom-in">
         <img
           src="images/icon-manutencao-arcotec.png"
           alt=""
@@ -93,7 +95,7 @@
           <li class=" card__description">Remoção</li>
         </p>
       </article>
-      <article class="services__card">
+      <article class="services__card" data-aos="zoom-in">
         <img
           src="images/icon-consultoria-e-orcamento-arcotec.png"
           alt=""
@@ -110,7 +112,7 @@
       </article>
     </section>
     <section class="range__section">
-      <div class="range__block__text">
+      <div class="range__block__text" data-aos="zoom-in">
         <h2 class="range__primary__text">
           Atendemos em toda CAPITAL e<br />
           GRANDE SÃO PAULO
@@ -121,7 +123,7 @@
           class="range__img"
         />
       </div>
-      <div class="range__block__img">
+      <div class="range__block__img" data-aos="zoom-in">
         <img
           src="images/atendimento-mapasp-arcotec.png"
           alt=""
@@ -129,7 +131,7 @@
         />
       </div>
     </section>
-    <section class="about__section" id="about__section">
+    <section class="about__section" id="about__section" data-aos="fade-up">
       <div class="about__block__img">
         <img
           src="images/sobre-arcotec.png"
@@ -152,7 +154,7 @@
       </div>
     </section>
     <section class="contact__section" id="contact__section">
-      <div class="contact__block__text">
+      <div class="contact__block__text" data-aos="fade-right">
         <h1>
           ENTRE EM CONTATO<br />
           E AGENDE UMA <br />VISITA!
@@ -171,7 +173,7 @@
           <p>Email: carlos.arcotec@gmail.com</p>
         </div>
       </div>
-      <div class="contact__block__form">
+      <div class="contact__block__form" data-aos="fade-left">
         <form method="POST" name="contact-client" class="contact__form" data-netlify="true" >
           <label for="" class="fullName">NOME COMPLETO</label>
           <input name="name" type="text" class="contact__input-fullName" />
@@ -206,5 +208,13 @@
       </div>
     </footer>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      delay: 200,
+      duration: 1200,
+      once: false
+    });
+  </script>
   </body>
 </html>
